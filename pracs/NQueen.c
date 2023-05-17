@@ -3,62 +3,51 @@ Time Complexity: O(n^2)*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-int a[30], count = 0;
-int place(int pos)
-{
-    int i;
-    for (i = 1; i < pos; i++)
-    {
-        if ((a[i] == a[pos]) || ((abs(a[i] - a[pos]) == abs(i - pos))))
-            return 0;
-    }
-    return 1;
+#include <stdbool.h>
+
+int x[10];
+int count = 0;
+
+bool place(int k, int i) {
+    for (int j = 1; j < k; j++) 
+        if (abs(x[j] - i) == abs(k - j) || x[j] == i) 
+            return false;
+    return true;
 }
-void print_sol(int n)
-{
-    int i, j;
-    count++;
+
+void print_sol(int n) {
     printf("\n\nSolution #%d:\n", count);
-    for (i = 1; i <= n; i++)
-    {
-        for (j = 1; j <= n; j++)
-        {
-            if (a[i] == j)
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            if (x[i] == j) {
                 printf("Q\t");
-            else
+            } else {
                 printf("*\t");
+            }
         }
         printf("\n");
     }
 }
-void queen(int n)
-{
-    int k = 1;
-    a[k] = 0;
-    while (k != 0)
-    {
-        a[k] = a[k] + 1;
-        while ((a[k] <= n) && !place(k))
-            a[k]++;
-        if (a[k] <= n)
-        {
-            if (k == n)
+
+void queen(int k, int n) {
+    for (int i = 1; i <= n; i++) {
+        if (place(k, i)) {
+            x[k] = i;
+            if (k == n) {
+                count++;
                 print_sol(n);
-            else
-            {
-                k++;
-                a[k] = 0;
+            } else {
+                queen(k + 1, n);
             }
         }
-        else
-            k--;
     }
 }
-void main()
-{
-    int i, n;
-    printf("Enter the number of Queens\n");
+
+int main() {
+    int n;
+    printf("Enter the number of Queens: ");
     scanf("%d", &n);
-    queen(n);
-    printf("\nTotal solutions=%d", count);
+    queen(1, n);
+    printf("\nTotal solutions = %d\n", count);
+    return 0;
 }
