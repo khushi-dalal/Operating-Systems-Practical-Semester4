@@ -1,0 +1,71 @@
+Java Practical’s List
+
+Sr. No.	Experiment
+1	Write a Java program to generate the Fibonacci series up to a given number 'n'. The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones.
+2	Convert a given string to uppercase/lowercase and display the result.
+3	Create a menu driven simple calculator to calculate Addition, Subtraction, Multiplication and Division on two inputs.
+4	The annual examination results of 5 students are tabulated as follows:
+ 
+WAP to read the data and determine the following:		
+•	Total marks obtained by each student
+•	The student who obtained the highest total marks
+5	Write a Java program to add two matrices of the same size.
+6	Compare two strings and display whether they are equal or not.
+7	Write an abstract class program to calculate area of circle, rectangle and triangle.
+8	Create a Java class named Rectangle to represent a rectangle. The class should have two instance variables: length and width. The class should have three constructors:
+1.	A default constructor that initializes length and width to 1.
+2.	A constructor that accepts one argument and initializes both length and width to the value of the argument.
+3.	A constructor that accepts two arguments and initializes length and width to the respective arguments.
+
+9	Create a Java class named Animal with properties for name and age, and methods for setting these properties and displaying them. Then, create a subclass named Dog that inherits from Animal and adds a new property for breed and a new method for setting and displaying this property.
+10	Extract a substring from a given string based on user-specified indices and display the result.
+11	You have been given an array of positive integers A1, A2,…,An with length N and you have to print an array of same length (N) where the values in the new array are the sum of every number in the array, except the number at that index.
+i/p 1 2 3 4
+For the 0th index, the result will be 2+3+4= 9, similarly for the second, third and fourth index the corresponding results will be 8, 7 and 6 respectively.
+i/p 4 5 6
+o/p 11 10 9
+12	Concatenate two strings and display the result. Also display the length of the original strings and resultant new string.
+13	Defines an int enum and then a variable called monthNumber and assigns it a value between 1 and 12, inclusive. Uses a switch statement to print the name of the month corresponding to the value of monthNumber.
+14	Write a Java program to check if a given string is a palindrome. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward.
+15	Write a program that takes an array of integers as input and finds the maximum and minimum values in the array.
+16	Write a program that calculates the factorial of a given number. The factorial of a number is the product of all positive integers less than or equal to that number.
+17	Write a program that takes a string as input and counts the number of vowels (a, e, i, o, u) in the string.
+18	Write a Java program that demonstrates exception handling using three different types of exceptions.
+19	Write a Java program that demonstrates multithreading by creating two threads: "ThreadA" and "ThreadB". Instruct students to implement the program to perform the following tasks:
+ThreadA should display the message "Hello from ThreadA" five times.
+ThreadB should display the message "Hello from ThreadB" five times.
+Ensure that both threads run concurrently and display their respective messages in an interleaved manner without any delay between the messages.
+20	Write a Java program that demonstrates multithreading by creating two threads: "ThreadA" and "ThreadB". Instruct students to implement the program to perform the following tasks:
+ThreadA should display the numbers from 1 to 5.
+ThreadB should display the numbers from 6 to 10.
+Ensure that both threads run concurrently and display their respective numbers without interleaving or overlapping.
+21	Replace a specific character in a given string with another character based on user input and display the result.
+22	Write a Java program to generate a random password of a specified length. The password should consist of a combination of uppercase letters, lowercase letters, numbers and special characters. Utilize the Random class to generate random characters.
+Example: 
+Generated Password: RtAe7tK@
+23	Search for a specific character or substring within a given string and display whether it is found or not.
+24	Write a Java program to check the eligibility of a person to vote as a citizen of India. The program should take the person's age and country as input, and display the message "You are eligible to vote!" if the person is 18 years or older and their country is "India". Otherwise, display the message "You are not eligible to vote."
+25	Write a Java program that demonstrates the implementation of exception handling.
+Implement:
+●	NumberFormatException
+●	ArrayIndexOutOfBoundsException
+●	ArithmeticException						
+26	WAP to display the following patterns: 
+1
+2       1
+1       2       3
+4       3       2       1
+1       2       3       4       5
+6       5       4       3       2       1
+1       2       3       4       5       6       7
+
+
+     
+     A
+   CB
+ FED
+JIHG
+
+27	WAP that reads a positive integer from command line and count the number of digits the number has.
+28	WAP to accept students name from command line and store them in a vector.
+
